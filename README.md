@@ -19,4 +19,21 @@ Com o decorrer da pandemia, nossa empresa foi obtendo os dados da situação dos
 A base de dados gerada possui o seguinte esquema:
 
 <p align="center">
-  <img src="Estrela.PNG" >
+  <img src="Estrela.png" >
+
+  Com base nisso elaboramos as seguintes consultas em SQL para trazer respostas e visualizações para esses requisitos:
+  
+  "\n"
+  
+  1- SELECT CASE
+  
+   WHEN SITUACAO_ID = '1' THEN "Confirmado" 
+   WHEN SITUACAO_ID = '2' THEN "Confirmado recuperado"
+	 WHEN SITUACAO_ID = '3' THEN "Suspeito"
+	 WHEN SITUACAO_ID = '4' THEN "Descartado"
+	 WHEN SITUACAO_ID = '5' THEN "Óbito covid"
+	 WHEN SITUACAO_ID = '6' THEN "Óbito não covid"
+	 END AS Situacao,
+	 COUNT (SITUACAO_ID) AS "Quantidade"
+FROM TAB_CASOS
+GROUP BY 1
