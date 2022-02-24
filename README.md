@@ -1,5 +1,6 @@
-# Caso-de-Covid-19
-Analise da coleta de dados de uma empresa em contexto da pandemia
+# Caso de Covid 19
+## Analise da coleta de dados de uma empresa em contexto da pandemia
+
 
 Com o decorrer da pandemia, nossa empresa foi obtendo os dados da situação dos funcionários em relação à doença e os sintomas. Esses dados foram salvados numa base, e agora, com objeto de tomar decisões estratégicas sobre o modo de trabalho, quantidade de funcionários por setor, etc., é que surgem da direção as seguintes perguntas:
 
@@ -23,17 +24,18 @@ A base de dados gerada possui o seguinte esquema:
 
   Com base nisso elaboramos as seguintes consultas em SQL para trazer respostas e visualizações para esses requisitos:
   
-  
-  
-  1- SELECT CASE
-  
-   WHEN SITUACAO_ID = '1' THEN "Confirmado" 
-   WHEN SITUACAO_ID = '2' THEN "Confirmado recuperado"
-	 WHEN SITUACAO_ID = '3' THEN "Suspeito"
-	 WHEN SITUACAO_ID = '4' THEN "Descartado"
-	 WHEN SITUACAO_ID = '5' THEN "Óbito covid"
-	 WHEN SITUACAO_ID = '6' THEN "Óbito não covid"
-	 END AS Situacao,
-	 COUNT (SITUACAO_ID) AS "Quantidade"
+  **1)**
+ ```
+SELECT
+	CASE
+	WHEN SITUACAO_ID = '1' THEN "Confirmado" 
+	WHEN SITUACAO_ID = '2' THEN "Confirmado recuperado"
+	WHEN SITUACAO_ID = '3' THEN "Suspeito"
+	WHEN SITUACAO_ID = '4' THEN "Descartado"
+	WHEN SITUACAO_ID = '5' THEN "Óbito covid"
+	WHEN SITUACAO_ID = '6' THEN "Óbito não covid"
+	END AS Situacao,
+	COUNT (SITUACAO_ID) AS "Quantidade"
 FROM TAB_CASOS
 GROUP BY 1
+```
