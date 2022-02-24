@@ -19,4 +19,4 @@ Com o decorrer da pandemia, nossa empresa foi obtendo os dados da situação dos
 A base de dados gerada possui o seguinte esquema:
 
 <p align="center">
-  <img src="imagemds4.PNG" >
+  <img src="Estrela.PNG" >
