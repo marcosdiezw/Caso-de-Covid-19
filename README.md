@@ -23,7 +23,7 @@ A base de dados gerada possui o seguinte esquema:
 
   Com base nisso elaboramos as seguintes consultas em SQL para trazer respostas e visualizações para esses requisitos:
   
-  "\n"
+  
   
   1- SELECT CASE
   
