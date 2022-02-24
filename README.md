@@ -1,5 +1,5 @@
 # Caso de Covid 19
-## Analise da coleta de dados de uma empresa em contexto da pandemia
+### Analise da coleta de dados de uma empresa em contexto da pandemia
 
 
 Com o decorrer da pandemia, nossa empresa foi obtendo os dados da situação dos funcionários em relação à doença e os sintomas. Esses dados foram salvados numa base, e agora, com objeto de tomar decisões estratégicas sobre o modo de trabalho, quantidade de funcionários por setor, etc., é que surgem da direção as seguintes perguntas:
